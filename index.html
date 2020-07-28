@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Excel Sheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body onload="createSheet()">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <script src="index.js" async defer></script>
+    <!-- <p>Enter the required rows and cols</p> -->
+    <button onclick="addNewRow()">Add a new row</button>
+    <button onclick="addNewColumn()">Add a new column</button>
+    <button onclick="removeRow()">Delete a row</button>
+    <button onclick="removeColumn()">Delete a column</button>
+    <!-- <form action="/">
+      <label for="rows">Rows:</label>
+      <input type="text" id="rows" name="rows" value="5">
+      <label for="cols">Columns:</label>
+      <input type="text" id="cols" name="cols" value="5">
+      <input type="button" onclick="createSheet()" value="Create">
+    </form> -->
+    <div id=sheet>
+      <table></table>
+    </div>
+  </body>
+</html>

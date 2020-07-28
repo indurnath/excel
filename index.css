@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  margin: auto;
+  width: 100%;
+  margin:auto;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  min-width: 2rem;
+  width: 4rem;
+  height: 25px;
+  resize:both;
+  overflow: auto;
+}
+td:after {
+  content: "";
+}
+
+#sheet {
+  margin: 10px 10px;
+}
